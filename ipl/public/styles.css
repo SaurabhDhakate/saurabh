@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+.box {
+    min-width: 310px; 
+    height: 400px; 
+    margin: 0 auto;
+    border: solid gainsboro;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+h1 {
+    text-align: center;
+    background-color: #7cb5ec;
+    color: white;
+    font-style: italic;
+}
