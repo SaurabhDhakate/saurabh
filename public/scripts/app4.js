@@ -40,7 +40,7 @@ function fetchAndVisualizeData() {
       yAxis: {
         min: 0,
         title: {
-          text: "Runs-Per-Over"
+          text: "Economy"
         }
       },
       series: [
