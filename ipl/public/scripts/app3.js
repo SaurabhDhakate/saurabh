@@ -25,7 +25,7 @@ function fetchAndVisualizeData() {
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares in January, 2018'
+        text: '3. Extra Runs in 2016'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
