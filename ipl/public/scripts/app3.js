@@ -27,6 +27,10 @@ function fetchAndVisualizeData() {
     title: {
         text: '3. Extra Runs in 2016'
     },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
     tooltip: {
         pointFormat: '<b>{point.y}</b> Runs'
     },
