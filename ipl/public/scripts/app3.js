@@ -28,7 +28,7 @@ function fetchAndVisualizeData() {
         text: '3. Extra Runs in 2016'
     },
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        pointFormat: '{series.name}: <b>{f}%</b>'
     },
     accessibility: {
         point: {
