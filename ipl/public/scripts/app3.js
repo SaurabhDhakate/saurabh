@@ -19,30 +19,37 @@ function fetchAndVisualizeData() {
   
     Highcharts.chart("extra-run-2016", {
       chart: {
-        type: "column"
-      },
-      title: {
-        text: "3. Extra Runs By Each Team In 2016"
-      },
-      subtitle: {
-        text:
-          'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
-      },
-      xAxis: {
-        type: "category"
-      },
-      yAxis: {
-        min: 0,
-        title: {
-          text: "Runs"
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Browser market shares in January, 2018'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
         }
-      },
-      series: [
-        {
-          name: "Teams",
-          data: seriesData
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+            }
         }
-      ]
-    });
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: seriesData
+    }]
+});
   }
   
