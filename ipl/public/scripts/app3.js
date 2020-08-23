@@ -41,7 +41,7 @@ function fetchAndVisualizeData() {
             cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>{point.y}+" Runs"'
+                format: '<b>{point.name}</b> -{point.y} Runs'
             }
         }
     },
