@@ -28,7 +28,7 @@ function fetchAndVisualizeData() {
         text: '3. Extra Runs in 2016'
     },
     tooltip: {
-        pointFormat: '<b>{point.y}</b> " -Runs"'
+        pointFormat: '<b>{point.y}</b> Runs'
     },
     accessibility: {
         point: {
