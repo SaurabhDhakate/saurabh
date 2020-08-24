@@ -4,11 +4,12 @@ body {
 }
 .box {
     min-width: 310px; 
-    height: 400px; 
-    margin: 0 auto;
+    height: auto; 
+    margin: auto;
     border: solid gainsboro;
     margin-top: 25px;
     border-radius: 25px;
+    background-color:#ffffff;
 }
 h1 {
     text-align: center;
