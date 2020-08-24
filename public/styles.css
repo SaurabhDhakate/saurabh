@@ -3,7 +3,8 @@ body {
     background-color: #e3f1f1;
 }
 .box {
-    min-width: 310px; 
+    min-width: 310px;
+    min-height : 50px; 
     height: auto; 
     margin: auto;
     border: solid gainsboro;
