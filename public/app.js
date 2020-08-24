@@ -14,10 +14,10 @@ function visualizeData(data) {
   return;
 }
 
-function visualizeMatchesPlayedPerYear(matchesPlayedPerYear) {
+function visualizeMatchesPlayedPerYear(data) {
   const seriesData = [];
-  for (let year in matchesPlayedPerYear) {
-    seriesData.push([year, matchesPlayedPerYear[year]]);
+  for (let year in data) {
+    seriesData.push([year, data[year]]);
   }
 
   Highcharts.chart("matches-played-per-year", {
@@ -157,7 +157,8 @@ function visualizeExtraIn2016(data) {
 function visualizeEcoBowler(data) {
   let seriesData = [];
   for (let bowler in data) {
-    var eco = 6*data[bowler]["run"]/data[bowler]["bowl"].toFixed(2)
+    var eco = 6*data[bowler]["run"]/data[bowler]["bowl"]
+    eco = (Math.floor(eco*100))/100;
     seriesData.push([bowler, eco]);
   }
 
