@@ -4,8 +4,7 @@ body {
 }
 .box {
     min-width: 310px;
-    min-height : 50px; 
-    height: auto; 
+    height: 10 auto; 
     margin: auto;
     border: solid gainsboro;
     margin-top: 25px;
