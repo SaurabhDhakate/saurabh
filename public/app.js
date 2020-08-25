@@ -11,6 +11,7 @@ function visualizeData(data) {
   visualizeMatchesWonByTeams(data.matchesWonByTeams);
   visualizeExtraIn2016(data.extraRunIn2016);
   visualizeEcoBowler(data.ecoBowler);
+  visualizeEcoBowler2();
   return;
 }
 
