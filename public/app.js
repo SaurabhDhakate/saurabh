@@ -197,76 +197,124 @@ function visualizeEcoBowler(data) {
   });
 }
 function visualizeEcoBowler2() {
-  Highcharts.chart('new', {
-
-    title: {
-        text: 'Solar Employment Growth by Sector, 2010-2016'
-    },
-
-    subtitle: {
-        text: 'Source: thesolarfoundation.com'
-    },
-
-    yAxis: {
-        title: {
-            text: 'Number of Employees'
-        }
-    },
-
-    xAxis: {
-        accessibility: {
-            rangeDescription: 'Range: 2010 to 2017'
-        }
-    },
-
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
-
-    plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            pointStart: 2010
-        }
-    },
-
-    series: [{
-        name: 'Installation',
-        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-    }, {
-        name: 'Manufacturing',
-        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
-    }, {
-        name: 'Sales & Distribution',
-        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
-    }, {
-        name: 'Project Development',
-        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
-    }, {
-        name: 'Other',
-        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
-    }],
-
-    responsive: {
-        rules: [{
-            condition: {
-                maxWidth: 500
-            },
-            chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
-                }
-            }
-        }]
-    }
-
-});
+  var para = document.getElementById('year').value;
+  if (para==1){
+    Highcharts.chart('new', {
+      chart: {
+          type: 'spline',
+          inverted: true
+      },
+      title: {
+          text: 'Atmosphere Temperature by Altitude'
+      },
+      subtitle: {
+          text: 'According to the Standard Atmosphere Model'
+      },
+      xAxis: {
+          reversed: false,
+          title: {
+              enabled: true,
+              text: 'Altitude'
+          },
+          labels: {
+              format: '{value} km'
+          },
+          accessibility: {
+              rangeDescription: 'Range: 0 to 80 km.'
+          },
+          maxPadding: 0.05,
+          showLastLabel: true
+      },
+      yAxis: {
+          title: {
+              text: 'Temperature'
+          },
+          labels: {
+              format: '{value}°'
+          },
+          accessibility: {
+              rangeDescription: 'Range: -90°C to 20°C.'
+          },
+          lineWidth: 2
+      },
+      legend: {
+          enabled: false
+      },
+      tooltip: {
+          headerFormat: '<b>{series.name}</b><br/>',
+          pointFormat: '{point.x} km: {point.y}°C'
+      },
+      plotOptions: {
+          spline: {
+              marker: {
+                  enable: false
+              }
+          }
+      },
+      series: [{
+          name: 'Temperature',
+          data: [[0, 15], [10, -50], [20, -56.5], [30, -46.5], [40, -22.1],
+              [50, -2.5], [60, -27.7], [70, -55.7], [80, -76.5]]
+      }]
+  });
+                
+  }
+  else{
+    Highcharts.chart('new', {
+      chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          type: 'pie'
+      },
+      title: {
+          text: 'Browser market shares in January, 2018'
+      },
+      tooltip: {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      accessibility: {
+          point: {
+              valueSuffix: '%'
+          }
+      },
+      plotOptions: {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                  enabled: false
+              },
+              showInLegend: true
+          }
+      },
+      series: [{
+          name: 'Brands',
+          colorByPoint: true,
+          data: [{
+              name: 'Chrome',
+              y: 61.41,
+              sliced: true,
+              selected: true
+          }, {
+              name: 'Internet Explorer',
+              y: 11.84
+          }, {
+              name: 'Firefox',
+              y: 10.85
+          }, {
+              name: 'Edge',
+              y: 4.67
+          }, {
+              name: 'Safari',
+              y: 4.18
+          }, {
+              name: 'Other',
+              y: 7.05
+          }]
+      }]
+  });
+  }
               
 }
 
