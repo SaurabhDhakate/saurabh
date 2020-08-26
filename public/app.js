@@ -51,8 +51,7 @@ function visualizeMatchesPlayedPerYear(data) {
 }
 
 function visualizeMatchesWonByTeams(data) {
-  const seasons = [],team = [],datas=[]
-  for (let year in data){seasons.push(year)}
+  const seasons = Object.keys(data),team = [],datas=[]
   for (let years of seasons){
       for (let teams in data[years]){if (!team.includes(teams)) team.push(teams)}
   }
