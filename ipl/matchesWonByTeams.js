@@ -2,9 +2,7 @@ function matchesWonByTeams(matches) {
     const result = {};
     for (let match of matches) {
       const season = match.season;
-      if (!result[season]) {
-        result[season]={}
-      } 
+      (!result[season]) ? result[season]={} : true
     }
 
     for(let year in result){
