@@ -58,7 +58,7 @@ app.get('/year/:id',(req,res)=>{
         .fromFile(DELIVERIES_FILE_PATH)
         .then(deliveries=>{
             let extra = extraRunIn(matches,deliveries,req.params.id);
-            res.send(extra,req.params.id)
+            res.json(extra)
         })
       });
 
