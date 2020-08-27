@@ -1,8 +1,10 @@
 const fs = require("fs");
+const express = require("express")
 const csv = require("csvtojson");
 const matchesPlayedPerYear = require("./ipl/matchesPlayedPerYear");
 const matchesWonByTeams = require("./ipl/matchesWonByTeams");
 const extraRunIn2016 = require("./ipl/extraRunIn2016");
+const extraRunIn = require("./ipl/extraRunIn");
 const ecoBowler = require("./ipl/economicalbowler");
 
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
@@ -42,3 +44,24 @@ function saveMatchesPlayedPerYear(result,winner,extra,eco) {
 }
 
 main();
+
+
+const app = express();
+
+app.use(express.static('public'))
+
+app.get('/year/:id',(req,res)=>{
+  csv()
+      .fromFile(MATCHES_FILE_PATH)
+      .then(matches => {
+        csv()
+        .fromFile(DELIVERIES_FILE_PATH)
+        .then(deliveries=>{
+            let extra = extraRunIn(matches,deliveries,req.params.id);
+            res.send(extra)
+        })
+      });
+
+})
+
+app.listen(8080)
