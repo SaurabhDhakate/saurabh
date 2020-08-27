@@ -50,15 +50,16 @@ const app = express();
 
 app.use(express.static('public'))
 
-app.get('/year/:id',(req,res)=>{
+app.get('/year',(req,res)=>{
   csv()
       .fromFile(MATCHES_FILE_PATH)
       .then(matches => {
         csv()
         .fromFile(DELIVERIES_FILE_PATH)
         .then(deliveries=>{
-            let extra = extraRunIn(matches,deliveries,req.params.id);
-            res.json(extra)
+            let year = req.query.year
+            let extra = extraRunIn(matches,deliveries,year);
+            res.json({year,extra_runs})
         })
       });
 
