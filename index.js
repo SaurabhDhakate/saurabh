@@ -50,7 +50,7 @@ const app = express();
 
 app.use(express.static('public'))
 
-app.get('/year',(req,res)=>{
+app.get('/extra-run-in',(req,res)=>{
   csv()
       .fromFile(MATCHES_FILE_PATH)
       .then(matches => {
@@ -58,7 +58,7 @@ app.get('/year',(req,res)=>{
         .fromFile(DELIVERIES_FILE_PATH)
         .then(deliveries=>{
             let year = req.query.year
-            let extra = extraRunIn(matches,deliveries,year);
+            let extra_runs = extraRunIn(matches,deliveries,year);
             res.json({year,extra_runs})
         })
       });
