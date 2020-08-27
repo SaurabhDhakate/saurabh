@@ -6,7 +6,7 @@ const matchesWonByTeams = require("./ipl/matchesWonByTeams");
 const extraRunIn2016 = require("./ipl/extraRunIn2016");
 const extraRunIn = require("./ipl/extraRunIn");
 const ecoBowler = require("./ipl/economicalbowler");
-
+const port = process.env.PORT || 8087
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
 const DELIVERIES_FILE_PATH = "./csv_data/deliveries.csv";
 const JSON_OUTPUT_FILE_PATH = "./public/data.json";
@@ -64,4 +64,4 @@ app.get('/year/:id',(req,res)=>{
 
 })
 
-app.listen(8080)
+app.listen(port)
