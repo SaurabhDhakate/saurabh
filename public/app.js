@@ -11,7 +11,7 @@ function visualizeData(data) {
   visualizeMatchesWonByTeams(data.matchesWonByTeams);
   visualizeExtraIn2016(data.extraRunIn2016);
   visualizeEcoBowler(data.ecoBowler);
-  visualizeEcoBowler2();
+  visualizeExtraIn()
   return;
 }
 
@@ -318,4 +318,57 @@ function visualizeEcoBowler2() {
               
 }
 
-module.exports = visualizeEcoBowler2;
+function visualizeExtraIn() {
+  var year = document.getElementById('year').value
+  var url = "/extra-run-in?year="+year
+  fetch(url)
+    .then(r=>r.json())
+    .then(calculate)
+}
+
+function calculate(data) {
+  const seriesData = [];
+  for (let team in data['extra_runs']) {
+    seriesData.push([team, data['extra_runs'][team]]);
+  }
+
+  Highcharts.chart("new-1", {
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+  },
+  title: {
+      text: '5. Extra Runs in '+data['year']
+  },
+  subtitle: {
+    text:
+      'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+  },
+  tooltip: {
+      pointFormat: '<b>{point.y}</b> Runs'
+  },
+  accessibility: {
+      point: {
+          valueSuffix: '%'
+      }
+  },
+  plotOptions: {
+      pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+              enabled: true,
+              format: '<b>{point.name}</b> -{point.y} Runs'
+          }
+      }
+  },
+  series: [{
+      name: 'Brands',
+      colorByPoint: true,
+      data: seriesData
+  }]
+});
+}
+module.exports = visualizeExtraIn;
