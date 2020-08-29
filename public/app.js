@@ -11,7 +11,7 @@ function visualizeData(data) {
   visualizeMatchesWonByTeams(data.matchesWonByTeams);
   visualizeExtraIn2016(data.extraRunIn2016);
   visualizeEcoBowler(data.ecoBowler);
-  visualizeStory(data.story)
+  visualizeStory(data.story,data.matchesPlayedPerYear)
   visualizeExtraIn()
 
   return;
@@ -45,17 +45,23 @@ function visualizeMatchesPlayedPerYear(data) {
     },
     series: [
       {
-        name: "Years",
+        name: "No. of Matches Played",
         data: seriesData
       }
     ]
   });
 }
 
-function visualizeStory(data) {
-  const seriesData = [];
-  for (let year in data) {
-    seriesData.push([year, data[year]]);
+function visualizeStory(data1,data2) {
+  const tossWinnerData = [];
+  const tossLooserData = [];
+  for (let year in data1) {
+    tossWinnerData.push([year, data1[year]]);
+    for (let losser in data2) {
+      if(year==losser) {
+        tossLooserData.push([year,data2[losser]-data1[year]])
+      }
+    }
   }
 
   Highcharts.chart("story", {
@@ -63,7 +69,7 @@ function visualizeStory(data) {
       type: "column"
     },
     title: {
-      text: "5. Matches Won by Toss Winner Per Year"
+      text: "5. Matches Won by Toss Winner and Looser Per Year"
     },
     subtitle: {
       text:
@@ -80,8 +86,12 @@ function visualizeStory(data) {
     },
     series: [
       {
-        name: "Years",
-        data: seriesData
+        name: "Match Won By Toss Winner",
+        data: tossWinnerData
+      },
+      {
+        name: "Match Won By Toss Looser",
+        data: tossLooserData
       }
     ]
   });
@@ -227,7 +237,7 @@ function visualizeEcoBowler(data) {
     },
     series: [
       {
-        name: "Bowlers",
+        name: "Bowlers Economy",
         data: seriesData
       }
     ]
