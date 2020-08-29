@@ -245,6 +245,8 @@ function visualizeEcoBowler(data) {
 }
 
 function visualizeExtraIn() {
+  let loader = `<span class="loader"></span>`
+  document.getElementById('new-1').innerHTML = loader
   var year = document.getElementById('year').value
   var url = "/extra-run-in?year="+year
   fetch(url)
