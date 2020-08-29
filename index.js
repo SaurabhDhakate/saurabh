@@ -6,6 +6,7 @@ const matchesPlayedPerYear = require("./ipl/matchesPlayedPerYear");
 const matchesWonByTeams = require("./ipl/matchesWonByTeams");
 const extraRunIn2016 = require("./ipl/extraRunIn2016");
 const extraRunIn = require("./ipl/extraRunIn");
+const story = require("./ipl/story")
 const ecoBowler = require("./ipl/economicalbowler");
 const port = process.env.PORT || 8010
 const MATCHES_FILE_PATH = "./csv_data/matches.csv";
@@ -23,18 +24,20 @@ function main() {
         let result = matchesPlayedPerYear(matches);
         let winner = matchesWonByTeams(matches);
         let eco = ecoBowler(deliveries,matches);
-        saveMatchesPlayedPerYear(result,winner,extra,eco);
+        let stories = story(matches)
+        saveMatchesPlayedPerYear(result,winner,extra,eco,stories);
       })
       
     });
 }
 
-function saveMatchesPlayedPerYear(result,winner,extra,eco) {
+function saveMatchesPlayedPerYear(result,winner,extra,eco,stories) {
   const jsonData = {
     matchesPlayedPerYear: result,
     matchesWonByTeams: winner,
     extraRunIn2016 : extra,
-    ecoBowler : eco 
+    ecoBowler : eco,
+    story : stories
   };
   const jsonString = JSON.stringify(jsonData);
   fs.writeFile(JSON_OUTPUT_FILE_PATH, jsonString, "utf8", err => {

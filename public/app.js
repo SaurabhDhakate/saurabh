@@ -11,7 +11,9 @@ function visualizeData(data) {
   visualizeMatchesWonByTeams(data.matchesWonByTeams);
   visualizeExtraIn2016(data.extraRunIn2016);
   visualizeEcoBowler(data.ecoBowler);
+  visualizeStory(data.story)
   visualizeExtraIn()
+
   return;
 }
 
@@ -27,6 +29,41 @@ function visualizeMatchesPlayedPerYear(data) {
     },
     title: {
       text: "1. Matches Played Per Year"
+    },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
+    xAxis: {
+      type: "category"
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "Matches"
+      }
+    },
+    series: [
+      {
+        name: "Years",
+        data: seriesData
+      }
+    ]
+  });
+}
+
+function visualizeStory(data) {
+  const seriesData = [];
+  for (let year in data) {
+    seriesData.push([year, data[year]]);
+  }
+
+  Highcharts.chart("story", {
+    chart: {
+      type: "column"
+    },
+    title: {
+      text: "5. Matches Won by Toss Winner Per Year"
     },
     subtitle: {
       text:
@@ -196,127 +233,6 @@ function visualizeEcoBowler(data) {
     ]
   });
 }
-function visualizeEcoBowler2() {
-  var para = document.getElementById('year').value;
-  if (para==1){
-    Highcharts.chart('new', {
-      chart: {
-          type: 'spline',
-          inverted: true
-      },
-      title: {
-          text: 'Atmosphere Temperature by Altitude'
-      },
-      subtitle: {
-          text: 'According to the Standard Atmosphere Model'
-      },
-      xAxis: {
-          reversed: false,
-          title: {
-              enabled: true,
-              text: 'Altitude'
-          },
-          labels: {
-              format: '{value} km'
-          },
-          accessibility: {
-              rangeDescription: 'Range: 0 to 80 km.'
-          },
-          maxPadding: 0.05,
-          showLastLabel: true
-      },
-      yAxis: {
-          title: {
-              text: 'Temperature'
-          },
-          labels: {
-              format: '{value}°'
-          },
-          accessibility: {
-              rangeDescription: 'Range: -90°C to 20°C.'
-          },
-          lineWidth: 2
-      },
-      legend: {
-          enabled: false
-      },
-      tooltip: {
-          headerFormat: '<b>{series.name}</b><br/>',
-          pointFormat: '{point.x} km: {point.y}°C'
-      },
-      plotOptions: {
-          spline: {
-              marker: {
-                  enable: false
-              }
-          }
-      },
-      series: [{
-          name: 'Temperature',
-          data: [[0, 15], [10, -50], [20, -56.5], [30, -46.5], [40, -22.1],
-              [50, -2.5], [60, -27.7], [70, -55.7], [80, -76.5]]
-      }]
-  });
-                
-  }
-  else{
-    Highcharts.chart('new', {
-      chart: {
-          plotBackgroundColor: null,
-          plotBorderWidth: null,
-          plotShadow: false,
-          type: 'pie'
-      },
-      title: {
-          text: 'Browser market shares in January, 2018'
-      },
-      tooltip: {
-          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-      },
-      accessibility: {
-          point: {
-              valueSuffix: '%'
-          }
-      },
-      plotOptions: {
-          pie: {
-              allowPointSelect: true,
-              cursor: 'pointer',
-              dataLabels: {
-                  enabled: false
-              },
-              showInLegend: true
-          }
-      },
-      series: [{
-          name: 'Brands',
-          colorByPoint: true,
-          data: [{
-              name: 'Chrome',
-              y: 61.41,
-              sliced: true,
-              selected: true
-          }, {
-              name: 'Internet Explorer',
-              y: 11.84
-          }, {
-              name: 'Firefox',
-              y: 10.85
-          }, {
-              name: 'Edge',
-              y: 4.67
-          }, {
-              name: 'Safari',
-              y: 4.18
-          }, {
-              name: 'Other',
-              y: 7.05
-          }]
-      }]
-  });
-  }
-              
-}
 
 function visualizeExtraIn() {
   var year = document.getElementById('year').value
@@ -340,7 +256,7 @@ function calculate(data) {
       type: 'pie'
   },
   title: {
-      text: '5. Extra Runs in '+data['year']
+      text: '6. Extra Runs in '+data['year']
   },
   subtitle: {
     text:
