@@ -4,7 +4,7 @@ body {
 }
 .box {
     min-width: 310px;
-    height: 10 auto; 
+    min-height: 10 auto; 
     margin: auto;
     border: solid gainsboro;
     margin-top: 25px;
@@ -16,6 +16,8 @@ h1 {
     background-color: #7cb5ec;
     color: white;
     font-style: italic;
+    padding: 10px;
+    border-radius: 10px;
 }
 .year{
     width: 300px;
@@ -68,8 +70,8 @@ h1 {
     border-radius: 50%;
     display: table;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
   }

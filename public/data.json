@@ -1,1 +1,567 @@
-{"matchesPlayedPerYear":{"2008":58,"2009":57,"2010":60,"2011":73,"2012":74,"2013":76,"2014":60,"2015":59,"2016":60,"2017":59,"2018":60,"2019":60},"matchesWonByTeams":{"2008":{"Kolkata Knight Riders":6,"Chennai Super Kings":9,"Delhi Daredevils":7,"Royal Challengers Bangalore":4,"Rajasthan Royals":13,"Kings XI Punjab":10,"Deccan Chargers":2,"Mumbai Indians":7},"2009":{"Mumbai Indians":5,"Royal Challengers Bangalore":9,"Delhi Daredevils":10,"Deccan Chargers":9,"Chennai Super Kings":8,"Kolkata Knight Riders":3,"Rajasthan Royals":6,"Kings XI Punjab":7},"2010":{"Kolkata Knight Riders":7,"Mumbai Indians":11,"Delhi Daredevils":7,"Deccan Chargers":8,"Royal Challengers Bangalore":8,"Chennai Super Kings":9,"Rajasthan Royals":6,"Kings XI Punjab":4},"2011":{"Chennai Super Kings":11,"Rajasthan Royals":6,"Royal Challengers Bangalore":10,"Mumbai Indians":10,"Pune Warriors":4,"Kolkata Knight Riders":8,"Kings XI Punjab":7,"Deccan Chargers":6,"Kochi Tuskers Kerala":6,"Delhi Daredevils":4,"":1},"2012":{"Mumbai Indians":10,"Delhi Daredevils":11,"Pune Warriors":4,"Rajasthan Royals":7,"Royal Challengers Bangalore":8,"Chennai Super Kings":10,"Kolkata Knight Riders":12,"Kings XI Punjab":8,"Deccan Chargers":4},"2013":{"Kolkata Knight Riders":6,"Royal Challengers Bangalore":9,"Sunrisers Hyderabad":10,"Rajasthan Royals":11,"Mumbai Indians":13,"Kings XI Punjab":8,"Chennai Super Kings":12,"Pune Warriors":4,"Delhi Daredevils":3},"2014":{"Kolkata Knight Riders":11,"Royal Challengers Bangalore":5,"Kings XI Punjab":12,"Rajasthan Royals":7,"Delhi Daredevils":2,"Chennai Super Kings":10,"Sunrisers Hyderabad":6,"Mumbai Indians":7},"2015":{"Kolkata Knight Riders":7,"Chennai Super Kings":10,"Rajasthan Royals":7,"Royal Challengers Bangalore":8,"Kings XI Punjab":3,"Sunrisers Hyderabad":7,"Delhi Daredevils":5,"Mumbai Indians":10,"":2},"2016":{"Rising Pune Supergiants":5,"Kolkata Knight Riders":8,"Gujarat Lions":9,"Royal Challengers Bangalore":9,"Mumbai Indians":7,"Delhi Daredevils":7,"Kings XI Punjab":4,"Sunrisers Hyderabad":11},"2017":{"Sunrisers Hyderabad":8,"Rising Pune Supergiant":10,"Kolkata Knight Riders":9,"Kings XI Punjab":7,"Royal Challengers Bangalore":3,"Mumbai Indians":12,"Delhi Daredevils":6,"Gujarat Lions":4},"2018":{"Chennai Super Kings":11,"Kings XI Punjab":6,"Kolkata Knight Riders":9,"Sunrisers Hyderabad":10,"Rajasthan Royals":7,"Royal Challengers Bangalore":6,"Delhi Daredevils":5,"Mumbai Indians":6},"2019":{"Chennai Super Kings":10,"Kolkata Knight Riders":6,"Delhi Capitals":10,"Kings XI Punjab":6,"Mumbai Indians":11,"Sunrisers Hyderabad":6,"Rajasthan Royals":5,"Royal Challengers Bangalore":5,"":1}},"extraRunIn2016":{"Rising Pune Supergiants":108,"Mumbai Indians":102,"Kolkata Knight Riders":122,"Delhi Daredevils":106,"Gujarat Lions":98,"Kings XI Punjab":100,"Sunrisers Hyderabad":107,"Royal Challengers Bangalore":156},"ecoBowler":{"UT Yadav":{"run":387,"bowl":266},"M Morkel":{"run":212,"bowl":174},"Shakib Al Hasan":{"run":123,"bowl":89},"SP Narine":{"run":246,"bowl":196},"AD Russell":{"run":332,"bowl":254},"PP Chawla":{"run":275,"bowl":212},"SL Malinga":{"run":453,"bowl":378},"R Vinay Kumar":{"run":371,"bowl":265},"CJ Anderson":{"run":33,"bowl":24},"JJ Bumrah":{"run":184,"bowl":98},"PP Ojha":{"run":23,"bowl":12},"Harbhajan Singh":{"run":448,"bowl":349},"JA Morkel":{"run":113,"bowl":74},"NM Coulter-Nile":{"run":331,"bowl":264},"DJ Muthuswami":{"run":108,"bowl":84},"Imran Tahir":{"run":315,"bowl":220},"A Mishra":{"run":312,"bowl":249},"JP Duminy":{"run":128,"bowl":107},"A Nehra":{"run":453,"bowl":385},"MM Sharma":{"run":482,"bowl":350},"IC Pandey":{"run":228,"bowl":189},"R Ashwin":{"run":229,"bowl":240},"DJ Bravo":{"run":442,"bowl":324},"Sandeep Sharma":{"run":359,"bowl":311},"Anureet Singh":{"run":477,"bowl":322},"AR Patel":{"run":399,"bowl":289},"Karanveer Singh":{"run":159,"bowl":87},"MG Johnson":{"run":346,"bowl":231},"TG Southee":{"run":255,"bowl":175},"CH Morris":{"run":336,"bowl":270},"DS Kulkarni":{"run":290,"bowl":221},"JP Faulkner":{"run":433,"bowl":281},"PV Tambe":{"run":267,"bowl":204},"STR Binny":{"run":143,"bowl":119},"B Kumar":{"run":419,"bowl":323},"TA Boult":{"run":239,"bowl":181},"I Sharma":{"run":161,"bowl":89},"KV Sharma":{"run":338,"bowl":239},"RS Bopara":{"run":164,"bowl":123},"Parvez Rasool":{"run":31,"bowl":30},"RA Jadeja":{"run":334,"bowl":258},"SA Abbott":{"run":57,"bowl":32},"HV Patel":{"run":339,"bowl":272},"VR Aaron":{"run":180,"bowl":113},"AN Ahmed":{"run":129,"bowl":76},"DJG Sammy":{"run":26,"bowl":18},"YS Chahal":{"run":416,"bowl":283},"KC Cariappa":{"run":28,"bowl":12},"YK Pathan":{"run":100,"bowl":60},"DJ Hooda":{"run":131,"bowl":97},"JD Unadkat":{"run":30,"bowl":18},"AD Mathews":{"run":249,"bowl":185},"Yuvraj Singh":{"run":75,"bowl":55},"P Suyal":{"run":97,"bowl":67},"J Suchith":{"run":338,"bowl":239},"KA Pollard":{"run":121,"bowl":81},"R Dhawan":{"run":111,"bowl":79},"P Kumar":{"run":338,"bowl":230},"A Ashish Reddy":{"run":51,"bowl":37},"S Gopal":{"run":23,"bowl":13},"PJ Cummins":{"run":103,"bowl":66},"GB Hogg":{"run":148,"bowl":127},"P Negi":{"run":259,"bowl":183},"RG More":{"run":63,"bowl":37},"GJ Maxwell":{"run":97,"bowl":63},"DW Steyn":{"run":171,"bowl":116},"NLTC Perera":{"run":55,"bowl":37},"Ankit Sharma":{"run":114,"bowl":86},"SR Watson":{"run":273,"bowl":193},"Iqbal Abdulla":{"run":150,"bowl":121},"D Wiese":{"run":360,"bowl":262},"MJ McClenaghan":{"run":395,"bowl":305},"HH Pandya":{"run":178,"bowl":107},"Shivam Sharma":{"run":44,"bowl":18},"R Tewatia":{"run":31,"bowl":18},"J Botha":{"run":82,"bowl":62},"MC Henriques":{"run":164,"bowl":157},"Bipul Sharma":{"run":50,"bowl":42},"MA Starc":{"run":306,"bowl":272},"S Nadeem":{"run":43,"bowl":44},"V Kohli":{"run":10,"bowl":11},"M Vijay":{"run":28,"bowl":24},"Z Khan":{"run":159,"bowl":155},"SK Raina":{"run":94,"bowl":78},"SN Thakur":{"run":39,"bowl":20},"J Theron":{"run":41,"bowl":26},"GS Sandhu":{"run":86,"bowl":48},"R Bhatia":{"run":47,"bowl":30},"RN ten Doeschate":{"run":4,"bowl":7},"S Aravind":{"run":132,"bowl":110},"M de Lange":{"run":30,"bowl":26},"BE Hendricks":{"run":112,"bowl":82},"Gurkeerat Singh":{"run":66,"bowl":56},"J Yadav":{"run":29,"bowl":42},"AB Dinda":{"run":63,"bowl":33},"Azhar Mahmood":{"run":41,"bowl":20},"BB Sran":{"run":36,"bowl":20},"CH Gayle":{"run":16,"bowl":13},"DR Smith":{"run":17,"bowl":12}},"story":{"2008":28,"2009":33,"2010":31,"2011":38,"2012":33,"2013":36,"2014":30,"2015":28,"2016":34,"2017":34,"2018":32,"2019":36}}
+{
+    "matchesPlayedPerYear": {
+        "2008": 58,
+        "2009": 57,
+        "2010": 60,
+        "2011": 73,
+        "2012": 74,
+        "2013": 76,
+        "2014": 60,
+        "2015": 59,
+        "2016": 60,
+        "2017": 59,
+        "2018": 60,
+        "2019": 60
+    },
+    "matchesWonByTeams": {
+        "2008": {
+            "Kolkata Knight Riders": 6,
+            "Chennai Super Kings": 9,
+            "Delhi Daredevils": 7,
+            "Royal Challengers Bangalore": 4,
+            "Rajasthan Royals": 13,
+            "Kings XI Punjab": 10,
+            "Deccan Chargers": 2,
+            "Mumbai Indians": 7
+        },
+        "2009": {
+            "Mumbai Indians": 5,
+            "Royal Challengers Bangalore": 9,
+            "Delhi Daredevils": 10,
+            "Deccan Chargers": 9,
+            "Chennai Super Kings": 8,
+            "Kolkata Knight Riders": 3,
+            "Rajasthan Royals": 6,
+            "Kings XI Punjab": 7
+        },
+        "2010": {
+            "Kolkata Knight Riders": 7,
+            "Mumbai Indians": 11,
+            "Delhi Daredevils": 7,
+            "Deccan Chargers": 8,
+            "Royal Challengers Bangalore": 8,
+            "Chennai Super Kings": 9,
+            "Rajasthan Royals": 6,
+            "Kings XI Punjab": 4
+        },
+        "2011": {
+            "Chennai Super Kings": 11,
+            "Rajasthan Royals": 6,
+            "Royal Challengers Bangalore": 10,
+            "Mumbai Indians": 10,
+            "Pune Warriors": 4,
+            "Kolkata Knight Riders": 8,
+            "Kings XI Punjab": 7,
+            "Deccan Chargers": 6,
+            "Kochi Tuskers Kerala": 6,
+            "Delhi Daredevils": 4,
+            "": 1
+        },
+        "2012": {
+            "Mumbai Indians": 10,
+            "Delhi Daredevils": 11,
+            "Pune Warriors": 4,
+            "Rajasthan Royals": 7,
+            "Royal Challengers Bangalore": 8,
+            "Chennai Super Kings": 10,
+            "Kolkata Knight Riders": 12,
+            "Kings XI Punjab": 8,
+            "Deccan Chargers": 4
+        },
+        "2013": {
+            "Kolkata Knight Riders": 6,
+            "Royal Challengers Bangalore": 9,
+            "Sunrisers Hyderabad": 10,
+            "Rajasthan Royals": 11,
+            "Mumbai Indians": 13,
+            "Kings XI Punjab": 8,
+            "Chennai Super Kings": 12,
+            "Pune Warriors": 4,
+            "Delhi Daredevils": 3
+        },
+        "2014": {
+            "Kolkata Knight Riders": 11,
+            "Royal Challengers Bangalore": 5,
+            "Kings XI Punjab": 12,
+            "Rajasthan Royals": 7,
+            "Delhi Daredevils": 2,
+            "Chennai Super Kings": 10,
+            "Sunrisers Hyderabad": 6,
+            "Mumbai Indians": 7
+        },
+        "2015": {
+            "Kolkata Knight Riders": 7,
+            "Chennai Super Kings": 10,
+            "Rajasthan Royals": 7,
+            "Royal Challengers Bangalore": 8,
+            "Kings XI Punjab": 3,
+            "Sunrisers Hyderabad": 7,
+            "Delhi Daredevils": 5,
+            "Mumbai Indians": 10,
+            "": 2
+        },
+        "2016": {
+            "Rising Pune Supergiants": 5,
+            "Kolkata Knight Riders": 8,
+            "Gujarat Lions": 9,
+            "Royal Challengers Bangalore": 9,
+            "Mumbai Indians": 7,
+            "Delhi Daredevils": 7,
+            "Kings XI Punjab": 4,
+            "Sunrisers Hyderabad": 11
+        },
+        "2017": {
+            "Sunrisers Hyderabad": 8,
+            "Rising Pune Supergiant": 10,
+            "Kolkata Knight Riders": 9,
+            "Kings XI Punjab": 7,
+            "Royal Challengers Bangalore": 3,
+            "Mumbai Indians": 12,
+            "Delhi Daredevils": 6,
+            "Gujarat Lions": 4
+        },
+        "2018": {
+            "Chennai Super Kings": 11,
+            "Kings XI Punjab": 6,
+            "Kolkata Knight Riders": 9,
+            "Sunrisers Hyderabad": 10,
+            "Rajasthan Royals": 7,
+            "Royal Challengers Bangalore": 6,
+            "Delhi Daredevils": 5,
+            "Mumbai Indians": 6
+        },
+        "2019": {
+            "Chennai Super Kings": 10,
+            "Kolkata Knight Riders": 6,
+            "Delhi Capitals": 10,
+            "Kings XI Punjab": 6,
+            "Mumbai Indians": 11,
+            "Sunrisers Hyderabad": 6,
+            "Rajasthan Royals": 5,
+            "Royal Challengers Bangalore": 5,
+            "": 1
+        }
+    },
+    "extraRunIn2016": {
+        "Rising Pune Supergiants": 108,
+        "Mumbai Indians": 102,
+        "Kolkata Knight Riders": 122,
+        "Delhi Daredevils": 106,
+        "Gujarat Lions": 98,
+        "Kings XI Punjab": 100,
+        "Sunrisers Hyderabad": 107,
+        "Royal Challengers Bangalore": 156
+    },
+    "ecoBowler": {
+        "UT Yadav": {
+            "run": 387,
+            "bowl": 266
+        },
+        "M Morkel": {
+            "run": 212,
+            "bowl": 174
+        },
+        "Shakib Al Hasan": {
+            "run": 123,
+            "bowl": 89
+        },
+        "SP Narine": {
+            "run": 246,
+            "bowl": 196
+        },
+        "AD Russell": {
+            "run": 332,
+            "bowl": 254
+        },
+        "PP Chawla": {
+            "run": 275,
+            "bowl": 212
+        },
+        "SL Malinga": {
+            "run": 453,
+            "bowl": 378
+        },
+        "R Vinay Kumar": {
+            "run": 371,
+            "bowl": 265
+        },
+        "CJ Anderson": {
+            "run": 33,
+            "bowl": 24
+        },
+        "JJ Bumrah": {
+            "run": 184,
+            "bowl": 98
+        },
+        "PP Ojha": {
+            "run": 23,
+            "bowl": 12
+        },
+        "Harbhajan Singh": {
+            "run": 448,
+            "bowl": 349
+        },
+        "JA Morkel": {
+            "run": 113,
+            "bowl": 74
+        },
+        "NM Coulter-Nile": {
+            "run": 331,
+            "bowl": 264
+        },
+        "DJ Muthuswami": {
+            "run": 108,
+            "bowl": 84
+        },
+        "Imran Tahir": {
+            "run": 315,
+            "bowl": 220
+        },
+        "A Mishra": {
+            "run": 312,
+            "bowl": 249
+        },
+        "JP Duminy": {
+            "run": 128,
+            "bowl": 107
+        },
+        "A Nehra": {
+            "run": 453,
+            "bowl": 385
+        },
+        "MM Sharma": {
+            "run": 482,
+            "bowl": 350
+        },
+        "IC Pandey": {
+            "run": 228,
+            "bowl": 189
+        },
+        "R Ashwin": {
+            "run": 229,
+            "bowl": 240
+        },
+        "DJ Bravo": {
+            "run": 442,
+            "bowl": 324
+        },
+        "Sandeep Sharma": {
+            "run": 359,
+            "bowl": 311
+        },
+        "Anureet Singh": {
+            "run": 477,
+            "bowl": 322
+        },
+        "AR Patel": {
+            "run": 399,
+            "bowl": 289
+        },
+        "Karanveer Singh": {
+            "run": 159,
+            "bowl": 87
+        },
+        "MG Johnson": {
+            "run": 346,
+            "bowl": 231
+        },
+        "TG Southee": {
+            "run": 255,
+            "bowl": 175
+        },
+        "CH Morris": {
+            "run": 336,
+            "bowl": 270
+        },
+        "DS Kulkarni": {
+            "run": 290,
+            "bowl": 221
+        },
+        "JP Faulkner": {
+            "run": 433,
+            "bowl": 281
+        },
+        "PV Tambe": {
+            "run": 267,
+            "bowl": 204
+        },
+        "STR Binny": {
+            "run": 143,
+            "bowl": 119
+        },
+        "B Kumar": {
+            "run": 419,
+            "bowl": 323
+        },
+        "TA Boult": {
+            "run": 239,
+            "bowl": 181
+        },
+        "I Sharma": {
+            "run": 161,
+            "bowl": 89
+        },
+        "KV Sharma": {
+            "run": 338,
+            "bowl": 239
+        },
+        "RS Bopara": {
+            "run": 164,
+            "bowl": 123
+        },
+        "Parvez Rasool": {
+            "run": 31,
+            "bowl": 30
+        },
+        "RA Jadeja": {
+            "run": 334,
+            "bowl": 258
+        },
+        "SA Abbott": {
+            "run": 57,
+            "bowl": 32
+        },
+        "HV Patel": {
+            "run": 339,
+            "bowl": 272
+        },
+        "VR Aaron": {
+            "run": 180,
+            "bowl": 113
+        },
+        "AN Ahmed": {
+            "run": 129,
+            "bowl": 76
+        },
+        "DJG Sammy": {
+            "run": 26,
+            "bowl": 18
+        },
+        "YS Chahal": {
+            "run": 416,
+            "bowl": 283
+        },
+        "KC Cariappa": {
+            "run": 28,
+            "bowl": 12
+        },
+        "YK Pathan": {
+            "run": 100,
+            "bowl": 60
+        },
+        "DJ Hooda": {
+            "run": 131,
+            "bowl": 97
+        },
+        "JD Unadkat": {
+            "run": 30,
+            "bowl": 18
+        },
+        "AD Mathews": {
+            "run": 249,
+            "bowl": 185
+        },
+        "Yuvraj Singh": {
+            "run": 75,
+            "bowl": 55
+        },
+        "P Suyal": {
+            "run": 97,
+            "bowl": 67
+        },
+        "J Suchith": {
+            "run": 338,
+            "bowl": 239
+        },
+        "KA Pollard": {
+            "run": 121,
+            "bowl": 81
+        },
+        "R Dhawan": {
+            "run": 111,
+            "bowl": 79
+        },
+        "P Kumar": {
+            "run": 338,
+            "bowl": 230
+        },
+        "A Ashish Reddy": {
+            "run": 51,
+            "bowl": 37
+        },
+        "S Gopal": {
+            "run": 23,
+            "bowl": 13
+        },
+        "PJ Cummins": {
+            "run": 103,
+            "bowl": 66
+        },
+        "GB Hogg": {
+            "run": 148,
+            "bowl": 127
+        },
+        "P Negi": {
+            "run": 259,
+            "bowl": 183
+        },
+        "RG More": {
+            "run": 63,
+            "bowl": 37
+        },
+        "GJ Maxwell": {
+            "run": 97,
+            "bowl": 63
+        },
+        "DW Steyn": {
+            "run": 171,
+            "bowl": 116
+        },
+        "NLTC Perera": {
+            "run": 55,
+            "bowl": 37
+        },
+        "Ankit Sharma": {
+            "run": 114,
+            "bowl": 86
+        },
+        "SR Watson": {
+            "run": 273,
+            "bowl": 193
+        },
+        "Iqbal Abdulla": {
+            "run": 150,
+            "bowl": 121
+        },
+        "D Wiese": {
+            "run": 360,
+            "bowl": 262
+        },
+        "MJ McClenaghan": {
+            "run": 395,
+            "bowl": 305
+        },
+        "HH Pandya": {
+            "run": 178,
+            "bowl": 107
+        },
+        "Shivam Sharma": {
+            "run": 44,
+            "bowl": 18
+        },
+        "R Tewatia": {
+            "run": 31,
+            "bowl": 18
+        },
+        "J Botha": {
+            "run": 82,
+            "bowl": 62
+        },
+        "MC Henriques": {
+            "run": 164,
+            "bowl": 157
+        },
+        "Bipul Sharma": {
+            "run": 50,
+            "bowl": 42
+        },
+        "MA Starc": {
+            "run": 306,
+            "bowl": 272
+        },
+        "S Nadeem": {
+            "run": 43,
+            "bowl": 44
+        },
+        "V Kohli": {
+            "run": 10,
+            "bowl": 11
+        },
+        "M Vijay": {
+            "run": 28,
+            "bowl": 24
+        },
+        "Z Khan": {
+            "run": 159,
+            "bowl": 155
+        },
+        "SK Raina": {
+            "run": 94,
+            "bowl": 78
+        },
+        "SN Thakur": {
+            "run": 39,
+            "bowl": 20
+        },
+        "J Theron": {
+            "run": 41,
+            "bowl": 26
+        },
+        "GS Sandhu": {
+            "run": 86,
+            "bowl": 48
+        },
+        "R Bhatia": {
+            "run": 47,
+            "bowl": 30
+        },
+        "RN ten Doeschate": {
+            "run": 4,
+            "bowl": 7
+        },
+        "S Aravind": {
+            "run": 132,
+            "bowl": 110
+        },
+        "M de Lange": {
+            "run": 30,
+            "bowl": 26
+        },
+        "BE Hendricks": {
+            "run": 112,
+            "bowl": 82
+        },
+        "Gurkeerat Singh": {
+            "run": 66,
+            "bowl": 56
+        },
+        "J Yadav": {
+            "run": 29,
+            "bowl": 42
+        },
+        "AB Dinda": {
+            "run": 63,
+            "bowl": 33
+        },
+        "Azhar Mahmood": {
+            "run": 41,
+            "bowl": 20
+        },
+        "BB Sran": {
+            "run": 36,
+            "bowl": 20
+        },
+        "CH Gayle": {
+            "run": 16,
+            "bowl": 13
+        },
+        "DR Smith": {
+            "run": 17,
+            "bowl": 12
+        }
+    },
+    "story": {
+        "2008": 28,
+        "2009": 33,
+        "2010": 31,
+        "2011": 38,
+        "2012": 33,
+        "2013": 36,
+        "2014": 30,
+        "2015": 28,
+        "2016": 34,
+        "2017": 34,
+        "2018": 32,
+        "2019": 36
+    }
+}

@@ -18,26 +18,26 @@ function main() {
     .fromFile(MATCHES_FILE_PATH)
     .then(matches => {
       csv()
-      .fromFile(DELIVERIES_FILE_PATH)
-      .then(deliveries=>{
-        let extra = extraRunIn2016(matches,deliveries)
-        let result = matchesPlayedPerYear(matches);
-        let winner = matchesWonByTeams(matches);
-        let eco = ecoBowler(deliveries,matches);
-        let stories = story(matches)
-        saveMatchesPlayedPerYear(result,winner,extra,eco,stories);
-      })
-      
+        .fromFile(DELIVERIES_FILE_PATH)
+        .then(deliveries => {
+          let extra = extraRunIn2016(matches, deliveries)
+          let result = matchesPlayedPerYear(matches);
+          let winner = matchesWonByTeams(matches);
+          let eco = ecoBowler(deliveries, matches);
+          let stories = story(matches)
+          saveMatchesPlayedPerYear(result, winner, extra, eco, stories);
+        })
+
     });
 }
 
-function saveMatchesPlayedPerYear(result,winner,extra,eco,stories) {
+function saveMatchesPlayedPerYear(result, winner, extra, eco, stories) {
   const jsonData = {
     matchesPlayedPerYear: result,
     matchesWonByTeams: winner,
-    extraRunIn2016 : extra,
-    ecoBowler : eco,
-    story : stories
+    extraRunIn2016: extra,
+    ecoBowler: eco,
+    story: stories
   };
   const jsonString = JSON.stringify(jsonData);
   fs.writeFile(JSON_OUTPUT_FILE_PATH, jsonString, "utf8", err => {
@@ -51,19 +51,19 @@ main();
 
 app.use(express.static('public'))
 
-app.get('/extra-run-in',(req,res)=>{
+app.get('/extra-run-in', (req, res) => {
   csv()
-      .fromFile(MATCHES_FILE_PATH)
-      .then(matches => {
-        csv()
+    .fromFile(MATCHES_FILE_PATH)
+    .then(matches => {
+      csv()
         .fromFile(DELIVERIES_FILE_PATH)
-        .then(deliveries=>{
-            let year = req.query.year
-            let extra_runs = extraRunIn(matches,deliveries,year);
-            res.json({year,extra_runs})
+        .then(deliveries => {
+          let year = req.query.year
+          let extra_runs = extraRunIn(matches, deliveries, year);
+          res.json({ year, extra_runs })
         })
-      });
+    });
 
 })
 
-app.listen(port||8010)
+app.listen(port || 8010)

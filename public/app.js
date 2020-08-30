@@ -11,7 +11,7 @@ function visualizeData(data) {
   visualizeMatchesWonByTeams(data.matchesWonByTeams);
   visualizeExtraIn2016(data.extraRunIn2016);
   visualizeEcoBowler(data.ecoBowler);
-  visualizeStory(data.story,data.matchesPlayedPerYear)
+  visualizeStory(data.story, data.matchesPlayedPerYear)
   visualizeExtraIn()
 
   return;
@@ -52,14 +52,14 @@ function visualizeMatchesPlayedPerYear(data) {
   });
 }
 
-function visualizeStory(data1,data2) {
+function visualizeStory(data1, data2) {
   const tossWinnerData = [];
   const tossLooserData = [];
   for (let year in data1) {
     tossWinnerData.push([year, data1[year]]);
     for (let losser in data2) {
-      if(year==losser) {
-        tossLooserData.push([year,data2[losser]-data1[year]])
+      if (year == losser) {
+        tossLooserData.push([year, data2[losser] - data1[year]])
       }
     }
   }
@@ -98,60 +98,60 @@ function visualizeStory(data1,data2) {
 }
 
 function visualizeMatchesWonByTeams(data) {
-  const seasons = Object.keys(data),team = [],datas=[]
-  for (let years of seasons){
-      for (let teams in data[years]){if (!team.includes(teams)) team.push(teams)}
+  const seasons = Object.keys(data), team = [], datas = []
+  for (let years of seasons) {
+    for (let teams in data[years]) { if (!team.includes(teams)) team.push(teams) }
   }
-  for(let item of team){
-      let games = []
-      for (let years of seasons){
-          for (let winr in data[years]){
-              if(data[years][item]){
-                  if(winr==item){
-                      games.push(data[years][winr])
-                  }
-              }else {
-                  games.push(0)
-                  break;
-              }
+  for (let item of team) {
+    let games = []
+    for (let years of seasons) {
+      for (let winr in data[years]) {
+        if (data[years][item]) {
+          if (winr == item) {
+            games.push(data[years][winr])
           }
+        } else {
+          games.push(0)
+          break;
+        }
       }
-      datas.push({name:item,data:games})
+    }
+    datas.push({ name: item, data: games })
   }
   Highcharts.chart('matches-won-per-year', {
-      chart: {
-          type: 'column'
-      },
+    chart: {
+      type: 'column'
+    },
+    title: {
+      text: '2. Matches won by teams in each season'
+    },
+    subtitle: {
+      text: 'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
+    xAxis: {
+      categories: seasons,
+      crosshair: true
+    },
+    yAxis: {
+      min: 0,
       title: {
-          text: '2. Matches won by teams in each season'
-      },
-      subtitle: {
-          text: 'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
-      },
-      xAxis: {
-          categories: seasons,
-          crosshair: true
-      },
-      yAxis: {
-          min: 0,
-          title: {
-              text: 'Matches'
-          }
-      },
-      tooltip: {
-          headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-          pointFormat: `<tr><td style="color:{series.color};padding:0">{series.name}: </td><td style="padding:0"><b>{point.y} Matches</b></td></tr>`,
-          footerFormat: '</table>',
-          shared: true,
-          useHTML: true
-      },
-      plotOptions: {
-          column: {
-              pointPadding: 0.2,
-              borderWidth: 0
-          }
-      },
-      series: datas
+        text: 'Matches'
+      }
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat: `<tr><td style="color:{series.color};padding:0">{series.name}: </td><td style="padding:0"><b>{point.y} Matches</b></td></tr>`,
+      footerFormat: '</table>',
+      shared: true,
+      useHTML: true
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0
+      }
+    },
+    series: datas
   });
 }
 
@@ -167,53 +167,53 @@ function visualizeExtraIn2016(data) {
       plotBorderWidth: null,
       plotShadow: false,
       type: 'pie'
-  },
-  title: {
+    },
+    title: {
       text: '3. Extra Runs in 2016'
-  },
-  subtitle: {
-    text:
-      'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
-  },
-  tooltip: {
+    },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
+    tooltip: {
       pointFormat: '<b>{point.y}</b> Runs'
-  },
-  accessibility: {
+    },
+    accessibility: {
       point: {
-          valueSuffix: '%'
+        valueSuffix: '%'
       }
-  },
-  plotOptions: {
+    },
+    plotOptions: {
       pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-              enabled: true,
-              format: '<b>{point.name}</b> -{point.y} Runs'
-          }
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.name}</b> -{point.y} Runs'
+        }
       }
-  },
-  series: [{
+    },
+    series: [{
       name: 'Brands',
       colorByPoint: true,
       data: seriesData
-  }]
-});
+    }]
+  });
 }
 
 function visualizeEcoBowler(data) {
   let seriesData = [];
   for (let bowler in data) {
-    var eco = 6*data[bowler]["run"]/data[bowler]["bowl"]
-    eco = (Math.floor(eco*100))/100;
+    var eco = 6 * data[bowler]["run"] / data[bowler]["bowl"]
+    eco = (Math.floor(eco * 100)) / 100;
     seriesData.push([bowler, eco]);
   }
 
-  seriesData.sort(function(a, b) {
-      return a[1] - b[1];
+  seriesData.sort(function (a, b) {
+    return a[1] - b[1];
   });
 
-  seriesData = seriesData.slice(0,10)
+  seriesData = seriesData.slice(0, 10)
 
   Highcharts.chart("eco-bowler", {
     chart: {
@@ -248,9 +248,9 @@ function visualizeExtraIn() {
   let loader = `<span class="loader"></span>`
   document.getElementById('new-1').innerHTML = loader
   var year = document.getElementById('year').value
-  var url = "/extra-run-in?year="+year
+  var url = "/extra-run-in?year=" + year
   fetch(url)
-    .then(r=>r.json())
+    .then(r => r.json())
     .then(calculate)
 }
 
@@ -266,37 +266,37 @@ function calculate(data) {
       plotBorderWidth: null,
       plotShadow: false,
       type: 'pie'
-  },
-  title: {
-      text: '6. Extra Runs in '+data['year']
-  },
-  subtitle: {
-    text:
-      'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
-  },
-  tooltip: {
+    },
+    title: {
+      text: '6. Extra Runs in ' + data['year']
+    },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>'
+    },
+    tooltip: {
       pointFormat: '<b>{point.y}</b> Runs'
-  },
-  accessibility: {
+    },
+    accessibility: {
       point: {
-          valueSuffix: '%'
+        valueSuffix: '%'
       }
-  },
-  plotOptions: {
+    },
+    plotOptions: {
       pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-              enabled: true,
-              format: '<b>{point.name}</b> -{point.y} Runs'
-          }
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.name}</b> -{point.y} Runs'
+        }
       }
-  },
-  series: [{
+    },
+    series: [{
       name: 'Brands',
       colorByPoint: true,
       data: seriesData
-  }]
-});
+    }]
+  });
 }
 module.exports = visualizeExtraIn;
