@@ -2,31 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="IPL visualization">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link href="./styles.css" rel="stylesheet">
-    <title>
-        IPL Dataset Visualization
-    </title>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="./app.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="IPL visualization">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link href="./styles.css" rel="stylesheet">
+  <title>
+    IPL Dataset Visualization
+  </title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="./app.js"></script>
 </head>
 
 <body>
-    <div class="header">
-    <h1>IPL Dataset Visualization</h1></div>
-    <div id="matches-played-per-year" class="box" style="margin-top: 130px;"></div>
-    <div id="matches-won-per-year" class="box"></div>
-    <div id="extra-run-2016" class="box"></div>
-    <div id="eco-bowler" class="box"></div>
-    <div id="story" class="box"></div>
-    <div id="extra-run-In" class="box" style="margin-bottom: 25px;">
-      <div id="new-1" style="border-radius: 20%;"></div>
-      <div style="margin: 10px 10px;">
-        <label style="font-style: italic;">Choose year:</label>
-        <select id="year" class="selec">
+  <div class="header">
+    <h1>IPL Dataset Visualization</h1>
+  </div>
+  <div id="matches-played-per-year" class="box" style="margin-top: 130px;"></div>
+  <div id="matches-won-per-year" class="box"></div>
+  <div id="extra-run-2016" class="box"></div>
+  <div id="eco-bowler" class="box"></div>
+  <div id="story" class="box"></div>
+  <div id="extra-run-In" class="box" style="margin-bottom: 25px;">
+    <div id="new-1" style="border-radius: 20%;"></div>
+    <div id="modal" class="modal">
+      <div class="box" style="width: 310px;padding: 50px;">
+        <label style="font-style: italic;">Choose year:</label><br>
+        <select id="year" class="dropdown">
           <option value="2008" selected>2008</option>
           <option value="2009">2009</option>
           <option value="2010">2010</option>
@@ -39,8 +41,15 @@
           <option value="2017">2017</option>
           <option value="2018">2018</option>
           <option value="2019">2019</option>
-        </select>
-        <button onclick="visualizeExtraIn()">SHOW</button>
+        </select><br>
+        <button onclick="visualizeExtraIn()" class="newbtn">SHOW</button>
       </div>
     </div>
+    <div onclick="modal()" style="cursor: pointer;width:35px; margin: 15px;">
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+    </div>
+
+  </div>
 </body>

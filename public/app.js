@@ -246,6 +246,7 @@ function visualizeEcoBowler(data) {
 
 function visualizeExtraIn() {
   let loader = `<span class="loader"></span>`
+  closeModal()
   document.getElementById('new-1').innerHTML = loader
   var year = document.getElementById('year').value
   var url = "/extra-run-in?year=" + year
@@ -299,4 +300,13 @@ function calculate(data) {
     }]
   });
 }
+
+function modal(){
+  document.getElementById('modal').style.display='block'
+}
+
+function closeModal(){
+  document.getElementById('modal').style.display="none"
+}
+
 module.exports = visualizeExtraIn;
