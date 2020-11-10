@@ -310,4 +310,4 @@ function closeModal(){
 }
 
 
-module.exports = visualizeExtraIn;
+module.exports.visualizeExtraIn = visualizeExtraIn;
