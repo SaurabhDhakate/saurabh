@@ -150,3 +150,9 @@ h1 {
       transform: rotate(360deg);
     }
   } 
+
+@media(max-width:480px) {
+    h1 {
+       font-size: larger; 
+    }
+}
