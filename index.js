@@ -67,7 +67,7 @@ app.get('/extra-run-in', (req, res) => {
 })
 
 app.get('/stylesheet', (req, res) => {
-  res.send('./ext.scss')
+  res.sendFile('./ext.scss')
 });
 
 app.listen(port || 8010)
